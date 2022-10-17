@@ -108,11 +108,11 @@ section {
         font-weight: map-get($font-weight, bold );
         transition: 200ms ease-in-out;
     }
-
-    #link:hover::after {
-        width: 100%;
+    
+    & #link:hover {
+        color: map-get($colors, accent );
     }
-
+    
     & #link::after {
         content: "";
         height: 2px;
@@ -120,6 +120,10 @@ section {
         display: block;
         background: map-get($colors , accent );
         transition: 200ms ease-in-out;
+    }
+    
+    #link:hover::after {
+        width: 100%;
     }
 
     & .link {
